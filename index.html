@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N. Kesavan | Civil Engineer Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d20;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5,10,30,0.9);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 25px;
+    color: #00eaff;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+section {
+    padding: 100px 10%;
+    min-height: 80vh;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background:
+    linear-gradient(90deg,rgba(5,10,30,.94),rgba(5,10,30,.65)),
+    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600")
+    center/cover;
+}
+
+.home h1 {
+    font-size: 55px;
+    color: #00eaff;
+    margin: 15px 0;
+}
+
+.home h2 {
+    font-size: 28px;
+}
+
+.home p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 550px;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: linear-gradient(45deg,#00eaff,#8a2be2);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 20px #00eaff;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #00eaff;
+}
+
+.profile {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #00eaff;
+    box-shadow: 0 0 40px #00eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    background: linear-gradient(135deg,#172c54,#6d28d9);
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    color: #00eaff;
+    margin-bottom: 45px;
+}
+
+.about {
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.skills-container, .hobby-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(145deg,#172449,#11152c);
+    border: 1px solid #00eaff;
+    border-radius: 18px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 0 25px #00eaff;
+}
+
+.card h3 {
+    color: #ffcc00;
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.card .emoji {
+    font-size: 45px;
+}
+
+.project-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact {
+    text-align: center;
+    background: #101a35;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #050914;
+    color: #00eaff;
+}
+
+@media(max-width:768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        padding-top: 150px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .profile {
+        width: 190px;
+        height: 190px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">N.KESAVAN</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobby">Hobby</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div>
+        <h2>Hello, Welcome to My Portfolio!</h2>
+        <h1>I'm N. Kesavan</h1>
+        <h2 class="highlight">Civil Engineering Student</h2>
+        <p>
+            Studying Civil Engineering at Mount Zion College
+            of Engineering and Technology, Pudukkottai.
+            Passionate about construction, technology
+            and creative learning.
+        </p>
+        <a href="#about" class="btn">Explore My Profile</a>
+    </div>
+
+    <div class="profile">👷</div>
+</section>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <div class="about">
+        <p>
+            Hello! I am <b>N. Kesavan</b>, a Civil Engineering
+            student at Mount Zion College of Engineering
+            and Technology, Pudukkottai.
+
+            I am interested in learning new technologies
+            and developing my engineering knowledge.
+            My goal is to become a successful civil engineer
+            and contribute to building a better future.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="title">My Education</h2>
+    <div class="skills-container">
+        <div class="card">
+            <div class="emoji">🎓</div>
+            <h3>College</h3>
+            <p>Mount Zion College of Engineering and Technology</p>
+            <p>Pudukkottai</p>
+            <p>Department: Civil Engineering</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="title">My Skills</h2>
+    <div class="skills-container">
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>MS Word</h3>
+            <p>Document creation, formatting and editing.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📐</div>
+            <h3>Civil Engineering</h3>
+            <p>Interested in construction and structural engineering.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌟</div>
+            <h3>Learning</h3>
+            <p>Always interested in learning new skills.</p>
+        </div>
+    </div>
+</section>
+
+<section id="hobby">
+    <h2 class="title">My Hobby</h2>
+    <div class="hobby-container">
+        <div class="card">
+            <div class="emoji">🎮</div>
+            <h3>Gaming</h3>
+            <p>
+                Playing games is my favourite hobby.
+                I enjoy gaming, entertainment and challenges.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Civil Engineering World</h2>
+    <div class="skills-container">
+
+        <div class="card">
+            <img class="project-img"
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600"
+            alt="Construction site">
+            <h3>Building Construction</h3>
+            <p>Exploring modern construction technology.</p>
+        </div>
+
+        <div class="card">
+            <img class="project-img"
+            src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600"
+            alt="Modern bridge architecture">
+            <h3>Bridge Engineering</h3>
+            <p>Interested in bridge structures and design.</p>
+        </div>
+
+        <div class="card">
+            <img class="project-img"
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600"
+            alt="Architectural design">
+            <h3>Building Design</h3>
+            <p>Learning about architectural design concepts.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+    <h3>N. Kesavan</h3>
+    <p>Civil Engineering Student</p>
+    <p>Mount Zion College of Engineering and Technology</p>
+    <p>Pudukkottai, Tamil Nadu</p>
+    <a href="mailto:yourmail@gmail.com" class="btn">
+        Send Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 N. Kesavan | My Personal Portfolio</p>
+    <p>Designed with ❤️ and Creativity</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        if(position < window.innerHeight - 50) {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
+    });
+});
+
+cards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(30px)";
+    card.style.transition = "all 0.8s ease";
+});
+</script>
+
+</body>
+</html>
